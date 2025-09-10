@@ -1,4 +1,14 @@
+#practice5/main.py
 
+from mini_games import play_number_game, play_rps_game, play_dice_game
+
+'''
+[main.py]
+- 사용자에게 게임 선택 메뉴 표시
+- 선택한 게임 모듈의 함수를 실행
+- 0 입력 시 종료
+- 잘못된 입력 처리
+'''
 
 while True:
     print("*====== KH MINI GAME ======*")
@@ -13,13 +23,13 @@ while True:
 
     if menu == "1":
         # 숫자 맞추기 게임 실행
-        pass
+        play_number_game()
     elif menu == "2":
         # 가위바위보 게임 실행
-        pass
+        play_rps_game()
     elif menu == "3":
         # 주사위게임 실행
-        pass
+        play_dice_game()
     elif menu == "0":
         print("*======== GAME END ========*")
         break

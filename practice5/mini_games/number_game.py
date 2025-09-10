@@ -1,4 +1,5 @@
 #practice5/mini_games/number_game.py
+import random
 
 '''
 1. 숫자 맞추기 게임
@@ -9,3 +10,12 @@
        * 사용자 입력을 받아 숫자를 맞추면 "정답!" 출력
        * 틀리면 "틀렸습니다. 정답은 X였습니다." 출력
 '''
+
+def play_number_game():
+    randomNum = random.randint(1,10)
+    selectNum = (int)(input("숫자를 맞춰보세요 : "))
+
+    if randomNum == selectNum:
+        print("정답!")
+    else:
+        print(f"틀렸습니다. 정답은 {randomNum}였습니다.")
